@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="BằnG Dræm Wave RSX Air Blade SH" />
+    <meta property="og:image" content="/static/Background.jpg" />
+    <meta property="og:description" content="Website created just for testing purpose XD. Just get in and have a look." />
+    <meta property="og:url" content="http://bangdream-wave-rsx-airblade-sh.herokuapp.com/" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>BằnG Dræm Wave RSX Air Blade SH</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/navBar.css" />
+    <link rel="stylesheet" type="text/css" href="css/musicPlayer.css" />
+    <link rel="stylesheet" type="text/css" href="css/dmMung.css" />
+    <link rel="stylesheet" type="text/css" href="css/osInfo.css" />
+    <link rel="stylesheet" type="text/css" href="css/Test.css" />
+    <link rel="stylesheet" type="text/css" href="css/startMenu.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="deps/ResizeSensor.js"></script>
+    <script src="deps/window.js"></script>
+    <script src="deps/slider.js"></script>
+    <script src="deps/slideOut.js"></script>
+</head>
+
+<body onload="onTime()">
+    <div id="main">
+        <div id="topSection">
+            <div id="powerButton"></div>
+            <div id="navBar">
+                <div id="osInfo-icon" class="icon"></div>
+                <div id="audioPlayer-icon" class="icon"></div>
+                <div id="dmMung-icon" class="icon"></div>
+                <div id="Test-icon" class="icon"></div>
+                <!-- <div id="Test_2-icon" class="icon"></div> -->
+            </div>
+            <div id="time"></div>
+        </div>
+        <div id="bgMenu">
+            <div id="loginAvatar"></div>
+            <div id="idInputContainer" class="inputContainer">
+                <label for="idInputField" class="label">Username: </label>
+                <input id="idInputField" type="text" class="inputField">
+            </div>
+            <div id="pwInputContainer" class="inputContainer">
+                <label for="pwInputField" class="label">Password: </label>
+                <input id="pwInputField" type="password" class="inputField" minlength="8" required>
+            </div>
+        </div>
+        <div id="windowManager">
+            <!-- <div id="Test_2" class="windowContainer">
+                <div id="Test_2Header" class=header>Test_2</div>
+            </div> -->
+            <div id="osInfo" class="windowContainer">
+                <div id="infoContainer">
+                    <div id="avatar"></div>
+                    <div id="aboutMe">
+                        ----------------------------<br />
+                        System Information<br />
+                        ----------------------------<br />
+                        OS: BanG OS! v2.0<br /> 
+                        Build: Z-X4.10.727<br /> 
+                        Processor: BMX Bicycle 4800H<br /> 
+                        Graphics: NVIDIB ZTX 3050<br /> 
+                        Memory: 8GB<br /> 
+                        ----------------------------<br /> 
+                        Owner Information<br />
+                        ----------------------------<br /> 
+                        Username: Try-Z<br /> 
+                        Organization: HCMUT<br /> 
+                        Badge: None<br /> 
+                        Performance: 9746<br /> 
+                        Accuracy: 0.9709<br /> 
+                        ----------------------------<br /> 
+                        Other Information<br /> 
+                        ----------------------------<br /> 
+                        Fav. Mods: (pending)<br /> 
+                        Fav. Mapper: Keqing<br /> 
+                        None: None<br />
+                    </div>
+                </div>
+                <div id="osInfoHeader" class="header">System Information</div>
+            </div>
+            <div id="audioPlayer" class="windowContainer">
+                <div id="audioPlayerContainer">
+                    <div id="audioController">
+                        <div id="playButton" class="button"></div>
+                        <div id="nextButton" class="button"></div>
+                        <div id="prevButton" class="button"></div>
+                        <div id="playingTime" class="timer"></div>
+                        <div id="fullTime" class="timer"></div>
+                        <div id="slider">
+                            <div id="nowPlaying"></div>
+                            <div id="node"></div>
+                        </div>
+                    </div>
+                    <div id="thumbMetaContainer">
+                        <div id="thumbnail"></div>
+                        <div id="metadata">
+                            <span style="font-family: SF Pro Display Bold; font-size: 20px">Project LUMINOUS - [プロジェクトルミナス]</span><br/>
+                            <span style="font-family: SF Pro Display Bold; font-size: 40px">GR@TITUTE</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="audioPlayerHeader" class="header">Mini Audio Player</div>
+            </div>
+            <div id="dmMung" class="windowContainer">
+                <div id="mungContent">
+
+                </div>
+                <div id="dmMungHeader" class="header">Đm Mung</div>
+            </div>
+            <div id="Test" class="windowContainer">
+                <canvas id="audioSpectrum"></canvas>
+                <div id="TestHeader" class="header">Test</div>
+            </div>
+        </div>
+        <div id="scammed">LOL GET SCAMMED!</div>
+    </div>
+    <audio id="lightdelight" src="audio/audio.mp3"></audio>
+    <script src="index.js"></script>
+</body>
+
+</html>

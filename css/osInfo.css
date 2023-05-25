@@ -1,0 +1,40 @@
+#infoContainer {
+	position: absolute;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	padding: 20px;
+	padding-top: 40px;
+	/* animation: slideOut var(--animation-length); */
+}
+
+#avatar {
+	width: 50%;
+	height: auto;
+	background-image: url("../static/MadokaProfile.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: top;
+	border-radius: 75px;
+	filter: drop-shadow(0 10px 10px rgba(0 0 0 / 0.2));
+	top: 0;
+}
+
+#aboutMe {
+	width: 50%;
+	height: 100%;
+	/* padding: 20px; */
+	font-family: Fira Mono Regular;
+	font-size: 11px;
+	line-height: 19px;
+	word-wrap: break-word;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	user-select: none;
+}

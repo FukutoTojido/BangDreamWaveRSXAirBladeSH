@@ -1,0 +1,51 @@
+#navBar {
+	/* position: absolute; */
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: calc(80vw - 10px);
+	margin: 5px;
+	height: 40px;
+	/* top: 0; */
+	/* left: 5vw; */
+	background-color: rgba(21, 21, 30, .8);
+	backdrop-filter: blur(5px);
+	border-radius: 10px;
+	/* box-shadow: 0 5px 5px 0px rgba(0 0 0 / 0.7); */
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+	margin: 10px;
+	/* filter: drop-shadow(0 2px 2px rgba(0 0 0 / 0.7)); */
+	transition: ease-in-out 200ms;
+	background-position: center;
+	background-size: 70%;
+	background-repeat: no-repeat;
+}
+
+.icon:hover {
+	transform: translateY(-2px);
+	/* filter: drop-shadow(0 4px 5px rgba(0 0 0 / 0.7)); */
+}
+
+#audioPlayer-icon {
+	background-image: url("../static/musicnote.png");
+}
+
+#osInfo-icon {
+	background-image: url("../static/systeminfo.png");
+}
+
+#dmMung-icon {
+	background-image: url("../static/mung.png");
+}
+
+#Test-icon {
+	background-image: url("../static/mung.png");
+}
+
+#Test_2-icon {
+	background-image: url("../static/mung.png");
+}
